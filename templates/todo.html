@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <h1>To-Do Page</h1>
+
+    <form action="/submittodoitem" method="POST">
+        <label for="itemName">Item Name:</label>
+        <input
+            type="text"
+            id="itemName"
+            name="itemName"
+            required
+        >
+
+        <br><br>
+
+        <label for="itemDescription">Item Description:</label>
+        <textarea
+            id="itemDescription"
+            name="itemDescription"
+            required
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
